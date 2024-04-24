@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basics</title>
+  </head>
+  <body>
+    <script type="text/javascript" defer="defer">
+    /*  var x = 10;
+      var y = 10;
+      y = x;
+      document.write(x+" "+y+"<br>");
+      var p1 = {x1:1, y1:2};
+      var p2 = p1;
+      p2.x1 = 30;
+      document.write("coordinates: "+p1.x1+" "+p1.y1+" "+p2.x1+" "+p2.y1);
+      document.write(typeof(p1));
+      document.write("<br>");
+      document.write("22" === 22);*/
+    /*  var array = ['hello','everyone','i\'m','Megz'];
+      for(i in array)
+      {
+        document.write(i + " " + array[i] + "<br>");
+      }*/
+    /*  function ex(a, b)
+      {
+        document.write(a+b+"<br>");
+      }
+      ex("4","5");
+      var y = function(u,m){ return u*m};
+      var z = y(3,15);
+      document.write(z+"<br>");*/
+  /*    function addf(a, b)
+      {
+        var n=10;
+        var sum1 = a + b(n);
+        document.write(sum1);
+      }
+      addf(10, function(x){return x*x*x}); */
+  /*    function bike(name, model)
+      {
+        this.name = name;
+        this.model = model;
+        this.show = function(){return name +" "+ model};
+      }
+      var myfav = new bike("Royal Enfield", "Bullet");
+      alert(myfav.show());
+      */
+  /*    function high1(callback, x, y)
+      {
+        var term = callback(x,y);
+        document.write(term+"<br>");
+      }
+      function add(a, b)
+      {
+        return a+b;
+      }
+      function sub(m, n)
+      {
+        return m-n;
+      }
+      high1(add, 10, 100);
+      high1(sub, 20, 20); */
+  /*    var x = "Ouuuuutttttttttttt";
+      function in1()
+      {
+         x = "Innnnnnnnnnnnnnnn";
+        document.write(x+"<br>");
+      }
+      in1();
+      document.write(x+"<br>");*/
+      function fact(x)
+      {
+        if(x == 0)
+        {
+          return 1;
+        }
+        else {
+          return x*fact(x-1);
+        }
+      }
+      document.write(fact(5)); 
+    </script>
+
+  </body>
+</html>

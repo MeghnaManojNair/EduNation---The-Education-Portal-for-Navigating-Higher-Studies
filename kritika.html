@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<style media="screen">
+		body{
+			background-color: lightblue;
+		}
+		#forms{
+			margin-left: 550px;
+			margin-top: 250px;
+			font-weight: bolder;
+			color: red;
+			font-family: georgia;
+		}
+		#but{
+			padding: 10px;
+			background-color: darkblue;
+			color: white;
+			margin-left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+	function validate(){
+		var x= document.getElementById("name").value;
+		if(x == null || x== "")
+		{
+			alert("Enter a username");
+			return false;
+		}
+		var y= document.getElementById("email").value;
+		var at= y.indexOf("@");
+		var dot= y.lastIndexOf(".");
+		if(y == null || y== "")
+		{
+			alert("empty email");
+			return false;
+		}
+		else if((at<1) || (dot < at+2) || (dot+2 >= y.length))
+	    {
+			alert("invalid email");
+			return false;
+		}
+		var z = document.getElementById("password").value;
+		if(z.length<4)
+		{
+			alert("Password should have a minimum of 5 characters!");
+			return false;
+		}
+      }
+	</script>
+	<form id="forms" name="my" action="qwd.asp" onsubmit="return validate()" method="post">
+		Username:<input type="text" name="name" id="name">
+		<br>
+		<br>
+		Password:<input type="text" name="password" id="password">
+		<br>
+		<br>
+		Email: &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="email" id="email">
+		<br>
+		<br>
+		<input id="but" type="submit" value="submit">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Steps to run EduNation
+1. Open XAMPP and start APACHE AND SQL server
+2. Go to Google Chrome and type - localhost/Edunation with Chat/index.html
+3. To open PHPMyAdmin - go to Admin tab corresponding to SQL server on XAMPP panel
+4. Database name - education
